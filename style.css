@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #b8c6db;
+    color: antiquewhite;
+    background-image: url(https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fimg.fullmoviehd4k.com%2Fresize%2F1283x772%2F3f%2F73%2F3f7310a56f093dd25f758f784a8c38a1%2F3f7310a56f093dd25f758f784a8c38a1.jpg&f=1&nofb=1);
+    display: flex; /*sin esto no puedo centrar con lo de abajo*/
+    align-items: center;
+    justify-content: center;
+    font-family: 'Oswald', sans-serif;
+    margin: 0;
+    min-height: 100vh; /*le da un toque de scrolleo*/
+    background-size: cover; /*para q la imagen cubra todo y no quede un margen feo*/
+}
+.quiz-container{
+    background-color: fff ;
+    background: rgba(255, 255, 255, 0.30); /*el pre vidriado*/
+    border-radius: 10px;
+    overflow: hidden; /*La propiedad overflow permite regular la visiblidad de los contenidos en este caso se cubre*/
+    width: 400px;
+    box-shadow: 0 0 10px 5px rgba(255, 242, 242, 0.1) ;
+    backdrop-filter: blur(2px); /*el efecto empañado*/
+}
+
+.quiz-header {
+    padding: 4rem; 
+}
+
+h2 {
+    margin: 0;
+}
+
+ul {
+    list-style-type:none;
+    padding: 0; /*al sacarle el padding a la lista movi las preguntas a la izquierda, sino me queda muy al centro las questions*/
+}
+
+ul li {
+    font-size: 1rem;
+    margin: 1rem 0; /*aca hice espacio entre las preguntas*/
+}
+
+ul li label {
+    cursor: pointer;
+}
+
+button {
+    background-image:  linear-gradient(to right, #169b62, #00b09f, #51c2ce, #96d2eb, #cfe2f8, #dce2fe, #ece1ff, #fde0fc, #ffc4e5, #ffa7bb, #ff9182, #ff873e);;
+    color: black;
+    display: block;
+    font-family: sans-serif;
+    font-size: 1rem;
+    width: 100%; /*con esto se estira el boton a lo ancho del cuadro container*/
+    padding: 0.2rem; /*el alto del boton- the height of the bottom*/
+}
+button:hover {
+    background-color: gold;
+}
+button:focus {
+    outline: none;
+}
