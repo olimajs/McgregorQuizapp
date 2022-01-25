@@ -23,7 +23,7 @@ body {
     overflow: hidden; /*La propiedad overflow permite regular la visiblidad de los contenidos en este caso se cubre*/
     width: 400px;
     box-shadow: 0 0 10px 5px rgba(255, 242, 242, 0.1) ;
-    backdrop-filter: blur(2px); /*el efecto empañado*/
+    backdrop-filter: blur(2px); /*el efecto blur empañado*/
 }
 
 .quiz-header {
